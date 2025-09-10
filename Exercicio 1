@@ -1,0 +1,14 @@
+programa {
+  funcao inicio() {
+    inteiro idade
+    escreva("informe sua idade: ")
+    leia(idade)
+    se(idade >= 18){
+      escreva("Voçê pode continuar navegando") 
+    }
+    senao{
+      escreva("Voçê deve ser de maior para continuar")
+    }
+    
+  }
+}
