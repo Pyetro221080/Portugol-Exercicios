@@ -1,0 +1,31 @@
+programa {
+  funcao inicio() {
+    real peso, altura, imc
+    escreva("Informe seu peso: ")
+    leia(peso)
+    escreva("Informe a sua altura: ")
+    leia(altura)
+
+    imc = peso / (altura * altura)
+    
+    se(imc < 18.5){
+      escreva("\nAbaixo do peso")
+    }
+    senao se(18.5 < imc > 24.9){
+      escreva("\nPeso normal")
+    }
+    senao se(24.9 < imc > 29.9){
+      escreva("\nSobrepeso")
+    }
+    senao se(29.9 < imc > 34.9){
+      escreva("\nObesidade grau I")
+    }
+    senao se(34.9 < imc > 39.9){
+      escreva("\nObesidade grau II (Severa)")
+    }
+    senao{
+      escreva("\nObesidade grau III (Mórbida)")
+    }
+    escreva(". O seu IMC é igual a: ", imc)
+  }
+}
